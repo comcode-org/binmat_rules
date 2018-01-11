@@ -55,8 +55,8 @@ The attacker and defender should be seated opposite each other, and the area bet
 
 The BINMAT deck being used for gameplay ([The Binmat Deck](#the-binmat-deck)) should be shuffled, and then dealt as follows:
 
-Deal thirteen face up cards in a deck at the defender's end of the right three lanes.
-Deal thirteen face down cards in a deck at the defender's end of the left three lanes.
+Deal thirteen cards face down into each lane at the defender's end.
+Turn the three left decks (defender's POV) over so that their top card is visible.
 
 These decks are referred to as 'lane decks'.
 
@@ -82,7 +82,7 @@ BINMAT app  |    |    |     |     |     |     |     |     | - position of defend
             |    |    |     |     |     |     |     |     |
             |    |    |     |     |     |     |     |     |
 (optional)  +----+    | +-+ | +-+ | +-+ | +-+ | +-+ | +-+ |
-                      | |h| | |h| | |h| | |2| | |6| | |@| | - lane decks
+                      | |2| | |6| | |@| | |h| | |h| | |h| | - lane decks
                       | +-+ | +-+ | +-+ | +-+ | +-+ | +-+ |
                       |     |     |     |     |     |     |
                       |     |     |     |     |     |     |
@@ -147,6 +147,9 @@ Place this card face-down to any attacker stack.
 If this card is a BREAK modifier (>), it can be played face-up or face-down on any attacker stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. This combat has slightly modified calculations, as described in [Combat](#combat).
 
 ### Combat
+
+Only the attacker is allowed to initiate combat normally.
+They can only do this in a lane in which they possess a stack of one or more cards.
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
 - For all present TRAP modifiers in the stack of the player who initiated combat:
