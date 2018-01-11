@@ -69,27 +69,48 @@ If the competitive rules are being followed, the BINMAT app ([Game Structure](#g
 The following is an ASCII representation of the play area at the conclusion of setup:
 
 ```
-                                attacker sat here
+                     defender's position
 
-                      |     |     |     |     |     |     |
-                      |     |     |     |     |     |     | - position of attacker stacks
-                      |     |     |     |     |     |     |
-                      |     |     |     |     |     |     |
-                      |     |     |     |     |     |     |
-            +----+    |     |     |     |     |     |     |
-phone with  |    |    |     |     |     |     |     |     |
-BINMAT app  |    |    |     |     |     |     |     |     | - position of defender stacks
-            |    |    |     |     |     |     |     |     |
-            |    |    |     |     |     |     |     |     |
-(optional)  +----+    | +-+ | +-+ | +-+ | +-+ | +-+ | +-+ |
-                      | |2| | |6| | |@| | |h| | |h| | |h| | - lane decks
-                      | +-+ | +-+ | +-+ | +-+ | +-+ | +-+ |
-                      |     |     |     |     |     |     |
-                      |     |     |     |     |     |     |
-                      |     |     |     |     |     |     | - space for lane discard piles
-                      |     |     |     |     |     |     |
 
-                                defender sat here
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |      lane|discard pile locations      |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+| +-----+ | +-----+ | +-----+ | +-----+ | +-----+ | +-----+ |
+| |     | | |     | | |     | | |4    | | |3    | | |2    | |
+| | {h} | | | {h} | | | {h} | | |!    | | |!    | | |!    | |
+| |     | | |     | | |   lane decks !| | |    !| | |    !| |
+| |     | | |     | | |     | | |    4| | |    3| | |    2| |
+| +-----+ | +-----+ | +-----+ | +-----+ | +-----+ | +-----+ |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |        defender stack location        |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         |
+|         |         |         |         |         |         | +-----+
+|         |         |         |         |         |         | |     | attacker deck location
+|         |         |         |         |         |         | |     |
+|         |         |         |         |         |         | |     |
+|         |         |         |         |         |         | |     |
+|         |         |         |         |         |         | +-----+
+|         |         |         |         |         |         |
+|         |         |         |         |         |         | +-----+
+|         |         |         |         |         |         | |     | attacker discard pile location
+|         |        attacker stack location        |         | |     |
+|         |         |         |         |         |         | |     |
+|         |         |         |         |         |         | |     |
+|         |         |         |         |         |         | +-----+
+
+
+                     attacker's position
+
+
 ```
 
 ## Game Structure
