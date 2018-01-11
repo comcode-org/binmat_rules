@@ -9,11 +9,11 @@
 - [Game Setup](#game-setup)
 - [Game Structure](#game-structure)
 - [Gameplay](#gameplay)
-- - [The Turn Cycle](#the-turn-cycle)
-- - [Drawing a Card](#drawing-a-card)
-- - [Playing a Card](#playing-a-card)
-- - [Combat](#combat)
-- - [The Wild Modifier](#the-wild-modifier)
+  - [The Turn Cycle](#the-turn-cycle)
+  - [Drawing a Card](#drawing-a-card)
+  - [Playing a Card](#playing-a-card)
+  - [Combat](#combat)
+  - [The Wild Modifier](#the-wild-modifier)
 - [Win Conditions](#win-conditions)
 - [Combat Examples and Edge Cases](#combat-examples-and-edge-cases)
 
@@ -174,7 +174,7 @@ They can only do this in a lane in which they possess a stack of one or more car
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
 - For all present TRAP modifiers in the stack of the player who initiated combat:
-- - If the TRAP was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAPs, attacker discard for attacker TRAPs)
+  - If the TRAP was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAPs, attacker discard for attacker TRAPs)
 
 Now repeat this for all present TRAP modifiers in the stack of the other player.
 
@@ -194,15 +194,15 @@ If the attacker stack has a lower attack power, then the attacker stack goes to 
 If the attacker stack has an attack power equal to or greater than the defender stack, then the following takes place:
 
 - If a BREAK modifier is not present in the attacker stack:
-- - Calculate the absolute difference between attack powers, and then add one to it. This is the damage value.
+  - Calculate the absolute difference between attack powers, and then add one to it. This is the damage value.
 - If a BREAK modifier is present in the attacker stack:
-- - The attack power of the attacker stack is now the damage value.
+  - The attack power of the attacker stack is now the damage value.
 
 - While the damage value is greater than zero:
-- - If there are cards left in the defender's stack, send the most recently played card there to the attacker discard pile.
-- - Else if there are not, but there are cards remaining in the lane's lane deck, send the top card from the lane deck to the attacker's hand.
-- - Else if there are no cards remaining in the lane deck either, the attacker has won the game. ([Win Conditions](#win-conditions))
-- - Subtract one from the damage value.
+  - If there are cards left in the defender's stack, send the most recently played card there to the attacker discard pile.
+  - Else if there are not, but there are cards remaining in the lane's lane deck, send the top card from the lane deck to the attacker's hand.
+  - Else if there are no cards remaining in the lane deck either, the attacker has won the game. ([Win Conditions](#win-conditions))
+  - Subtract one from the damage value.
  
 The attacker stack is now sent to the attacker discard.
 
