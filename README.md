@@ -75,7 +75,7 @@ The following is an ASCII representation of the play area at the conclusion of s
 |         |         |         |         |         |         |
 |         |         |         |         |         |         |
 |         |         |         |         |         |         |
-|         |      lane|discard pile locations      |         |
+|         |      lane discard pile locations      |         |
 |         |         |         |         |         |         |
 |         |         |         |         |         |         |
 |         |         |         |         |         |         |
