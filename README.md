@@ -163,7 +163,7 @@ be resolved now. ([The Wild Modifier](#the-wild-modifier))
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
 
 If both stacks have attack power zero, or a BOUNCE modifier is present in either stack:
-Send present BOUNCEs to opposing discard piles. (defender BOUNCE to attacker discard pile, attacker bounce to defender discard pile)
+Send all BOUNCEs in this lane to opposing discard piles. (defender BOUNCE to attacker discard pile, attacker bounce to defender discard pile)
 Send attacker stack to attacker discard pile.
 Leave defender stack in place.
 Combat has concluded.
