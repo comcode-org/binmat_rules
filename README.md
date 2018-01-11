@@ -55,8 +55,8 @@ The attacker and defender should be seated opposite each other, and the area bet
 
 The BINMAT deck being used for gameplay ([The Binmat Deck](#the-binmat-deck)) should be shuffled, and then dealt as follows:
 
-Deal thirteen face up cards in a deck at the defender's end of the right three lanes.
-Deal thirteen face down cards in a deck at the defender's end of the left three lanes.
+Deal thirteen cards face down into each lane at the defender's end.
+Turn the three left decks (defender's POV) over so that their top card is visible.
 
 These decks are referred to as 'lane decks'.
 
@@ -82,7 +82,7 @@ BINMAT app  |    |    |     |     |     |     |     |     | - position of defend
             |    |    |     |     |     |     |     |     |
             |    |    |     |     |     |     |     |     |
 (optional)  +----+    | +-+ | +-+ | +-+ | +-+ | +-+ | +-+ |
-                      | |h| | |h| | |h| | |2| | |6| | |@| | - lane decks
+                      | |2| | |6| | |@| | |h| | |h| | |h| | - lane decks
                       | +-+ | +-+ | +-+ | +-+ | +-+ | +-+ |
                       |     |     |     |     |     |     |
                       |     |     |     |     |     |     |
@@ -131,7 +131,7 @@ See the subsections below:
 #### DEFENDER:
 
 First, select the card from your hand which you wish to play.
-If this card is a number card, BOUNCE modifier (?), TRAP modifier (@) or WILD modifier (*) it can be  placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If not, it must be placed face down.
+If this card is a number card, BOUNCE modifier (?), TRAP modifier (@) or WILD modifier (*) it can be  placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
 
 If this card is a BREAK modifier (>), it can be placed face-up or face-down on any defender stack which already contains at least one card, and does not contain another face-up break. When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
 
@@ -141,13 +141,15 @@ First, select the card from your hand which you wish to play.
 If this card is a number card, TRAP modifier (@) or WILD modifier (*) it can be placed on any of your six attacker stacks.
 
 If this card is a BOUNCE modifier (?), you may perform one of the following:
-Place this card face-up on an empty attacker stack. The defender stack in that lane is turned face-up.
-Any BOUNCEs in the defender stack are sent to the attacker discard pile, and then the BOUNCE you played is sent to that lane's discard pile. Defender stack remains face up.
+Place this card face-up on an empty attacker stack. Commence combat immediately in this lane.
 Place this card face-down to any attacker stack.
 
 If this card is a BREAK modifier (>), it can be played face-up or face-down on any attacker stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. This combat has slightly modified calculations, as described in [Combat](#combat).
 
 ### Combat
+
+Only the attacker is allowed to initiate combat normally.
+They can only do this in a lane in which they possess a stack of one or more cards.
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
 - For all present TRAP modifiers in the stack of the player who initiated combat:
@@ -155,13 +157,16 @@ When combat is initiated in a lane, the cards in both attacker and defender stac
 
 Now repeat this for all present TRAP modifiers in the stack of the other player.
 
-If a BOUNCE modifier is present in either stack, send the attacker stack to the attacker discard pile.
-All present BOUNCE modifiers now go into the opponent's discard pile. (lane discard for defender BOUNCEs, attacker discard for attacker BOUNCEs)
-
 The number cards present in the stack should now have their sum calculated. Any present WILD modifiers should
 be resolved now. ([The Wild Modifier](#the-wild-modifier))
 
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
+
+If both stacks have attack power zero, or a BOUNCE modifier is present in either stack:
+Send present BOUNCEs to opposing discard piles. (defender BOUNCE to attacker discard pile, attacker bounce to defender discard pile)
+Send attacker stack to attacker discard pile.
+Leave defender stack in place.
+Combat has concluded.
 
 If the attacker stack has a lower attack power, then the attacker stack goes to the lane's discard pile and the defender stack remains in its lane, face up.
 
@@ -189,8 +194,6 @@ If there are no number cards in a stack, the first wild is treated as a 2 card, 
 ### Win Conditions
 
 The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
-The game can also be won by the defender if the attacker is unable to draw any cards from the lane decks, and 
-has no cards in attacker stacks or in their hand.
 The game is won by the attacker if they deal more damage to a lane deck than the lane deck has cards. This
 is mentioned in combat resolution (see [Combat](#combat))
 
