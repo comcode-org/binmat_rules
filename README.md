@@ -145,7 +145,7 @@ Place this card face-up on an empty attacker stack. The defender stack in that l
 Any BOUNCEs in the defender stack are sent to the attacker discard pile, and then the BOUNCE you played is sent to that lane's discard pile. Defender stack remains face up.
 Place this card face-down to any attacker stack.
 
-If this card is a BREAK modifier (>), it can be played face-up or face-downon any attacker stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. This combat has slightly modified calculations, as described in [Combat](#combat).
+If this card is a BREAK modifier (>), it can be played face-up or face-down on any attacker stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. This combat has slightly modified calculations, as described in [Combat](#combat).
 
 ### Combat
 
