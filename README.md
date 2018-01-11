@@ -1,7 +1,7 @@
 # BINMAT - The Human Compatible Rulebook
 
 ## Credits
-'thx alic'
+'thx alic' alice ([@alicehmd](https://github.com/alicehmd)), 
 
 ## Index 
 
@@ -196,6 +196,3 @@ is mentioned in combat resolution (see [Combat](#combat))
 
 ### Combat Examples and Edge Cases
 [now a stub]
-
-### Contributors
-alice ([@alicehmd](https://github.com/alicehmd)), 
