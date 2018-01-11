@@ -194,8 +194,6 @@ If there are no number cards in a stack, the first wild is treated as a 2 card, 
 ### Win Conditions
 
 The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
-The game can also be won by the defender if the attacker is unable to draw any cards from the lane decks, and 
-has no cards in attacker stacks or in their hand.
 The game is won by the attacker if they deal more damage to a lane deck than the lane deck has cards. This
 is mentioned in combat resolution (see [Combat](#combat))
 
