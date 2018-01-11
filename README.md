@@ -1,7 +1,7 @@
 # BINMAT - The Human Compatible Rulebook
 
 ## Credits
-'thx alic' alice ([@alicehmd](https://github.com/alicehmd)), 
+'thx alic' alice ([@alicehmd](https://github.com/alicehmd)), 'uncle deetr' dtr
 
 ## Index 
 
