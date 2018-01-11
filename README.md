@@ -56,7 +56,7 @@ The attacker and defender should be seated opposite each other, and the area bet
 The BINMAT deck being used for gameplay ([The Binmat Deck](#the-binmat-deck)) should be shuffled, and then dealt as follows:
 
 Deal thirteen cards face down into each lane at the defender's end.
-Turn the three left decks (defender's POV) over so that their top card is visible.
+Turn the top card in the three left decks (defender's POV) over so they are visible.
 
 These decks are referred to as 'lane decks'.
 
@@ -109,19 +109,19 @@ The actions available are:
 - Draw a card. [Drawing a Card](#drawing-a-card)
 - Play a card from your hand to a lane's stack. [Playing a Card](#playing-a-card)
 - Initiate combat in a lane. [Combat](#combat)
+- Discard a card into a lane discard pile. This is a defender-only action.
+
+You can inspect any discard pile at any time, even if it is not your turn.
 
 ### Drawing a Card
  
-The defender can draw a card from any of the six lane decks.
+The defender can draw a card from any of the six lane decks. When you draw a card from the three lane decks which have their top card face up, turn over the next card in the deck so it is face up and place it on top of the deck.
 The attacker can only draw from lane decks without a defender stack in front of them.
 The attacker can also draw from a special 'attacker deck' which is to be placed at the side of the play area, in front of the attacker discard pile. This deck is not present at the start of the game, but can be formed via the rules below:
 
 When a draw is attempted from an empty deck, the following takes place:
 The deck's corresponding discard pile is shuffled into the deck.
 The card can then be drawn from the top of the newly formed deck.
-
-Any deck which has its discard pile shuffled into it is to be placed face down.
-This includes previously face-up lane decks.
 
 ### Playing a Card
 
