@@ -178,7 +178,7 @@ When combat is initiated in a lane, the cards in both attacker and defender stac
 - For all present TRAP modifiers (@) in the stack of the player who initiated combat:
   - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
 
-Now repeat this for all present TRAP modifiers (@) in the stack of the other player.
+Now repeat this for all remaining TRAP modifiers (@) in the stack of the other player.
 
 The number cards present in the stack should now have their sum calculated. Any present WILD modifiers (\*) should
 be resolved now. ([The WILD Modifier (\*)](#the-wild-modifier))
