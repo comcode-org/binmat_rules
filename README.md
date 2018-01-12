@@ -176,7 +176,7 @@ They can only do this in a lane in which they possess a stack of one or more car
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
 - For all present TRAP modifiers (@) in the stack of the player who initiated combat:
-  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
+  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, discard the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
 
 Now repeat this for all remaining TRAP modifiers (@) in the stack of the other player.
 
@@ -186,12 +186,12 @@ be resolved now. ([The WILD Modifier (\*)](#the-wild-modifier))
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
 
 If both stacks have attack power zero, or a BOUNCE modifier (?) is present in either stack:
-Send all BOUNCE modifiers (?) in this lane to opposing discard piles. (defender BOUNCE modifiers (?) to attacker discard pile, attacker BOUNCE modifiers (?) to defender discard pile)
-Send attacker stack to attacker discard pile.
+Discard all BOUNCE modifiers (?) in this lane to opposing discard piles. (defender BOUNCE modifiers (?) to attacker discard pile, attacker BOUNCE modifiers (?) to defender discard pile)
+Discard attacker stack to attacker discard pile.
 Leave defender stack in place.
 Combat has concluded.
 
-If the attacker stack has a lower attack power, then the attacker stack goes to the lane's discard pile and the defender stack remains in its lane, face up.
+If the attacker stack has a lower attack power, then the attacker stack is discarded to the lane's discard pile and the defender stack remains in its lane, face up.
 
 If the attacker stack has an attack power equal to or greater than the defender stack, then the following takes place:
 
