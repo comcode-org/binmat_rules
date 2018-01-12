@@ -143,6 +143,7 @@ The attacker can also draw from a special 'attacker deck' which is to be placed 
 
 When a draw is attempted from an empty deck, the following takes place:
 The deck's corresponding discard pile is shuffled into the deck.
+If the deck formerly had its top card turned face up, turn the top card face up.
 The card can then be drawn from the top of the newly formed deck.
 
 ### Playing a Card
