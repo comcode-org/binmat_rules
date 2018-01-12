@@ -58,7 +58,7 @@ The BINMAT deck being used for gameplay ([The Binmat Deck](#the-binmat-deck)) sh
 Deal thirteen cards face down into each lane at the defender's end.
 Turn the top card in the three left decks (defender's POV) over so they are visible.
 
-These decks are referred to as 'lane decks'.
+These six decks are referred to as 'lane decks'.
 
 Enough space for another deck should be left behind (defender's perspective) the decks in each lane, as this is the location of the 'lane discard pile'.
 
