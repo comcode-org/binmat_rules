@@ -200,11 +200,8 @@ If the attacker stack has an attack power equal to or greater than the defender 
 - If a BREAK modifier (>) is present in the attacker stack:
   - The attack power of the attacker stack is now the damage value.
 
-- While the damage value is greater than zero:
-  - If there are cards left in the defender's stack, send the most recently played card there to the attacker discard pile.
-  - Else if there are not, but there are cards remaining in the lane's lane deck, send the top card from the lane deck to the attacker's hand.
-  - Else if there are no cards remaining in the lane deck either, the attacker has won the game. ([Win Conditions](#win-conditions))
-  - Subtract one from the damage value.
+For every point of damage, discard the most recently played card in the defender's stack to the attacker's discard pile.
+If the defender's stack is empty, the attacker instead draws a card from the lane deck. If the attacker cannot draw from the lane deck (because it is empty and has no lane discard pile), the attacker wins the game ([Win Conditions](#win-conditions))
  
 The attacker stack is now sent to the attacker discard.
 
@@ -217,8 +214,7 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 ### Win Conditions
 
 The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
-The game is won by the attacker if they deal more damage to a lane deck than the lane deck has cards. This
-is mentioned in combat resolution (see [Combat](#combat))
+The game is won by the attacker if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
 
 ### Combat Examples and Edge Cases
 [now a stub]
