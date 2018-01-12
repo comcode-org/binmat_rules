@@ -164,8 +164,8 @@ First, select the card from your hand which you wish to play.
 If this card is a number card, TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six attacker stacks.
 
 If this card is a BOUNCE modifier (?), you may perform one of the following:
-Place this card face-up on an empty attacker stack. Commence combat immediately in this lane.
-Place this card face-down to any attacker stack.
+- Place this card face-up on an empty attacker stack. Commence combat immediately in this lane.
+- Place this card face-down to any attacker stack.
 
 If this card is a BREAK modifier (>), it can be played face-up or face-down on any attacker stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. This combat has slightly modified calculations, as described in [Combat](#combat).
 
