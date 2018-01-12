@@ -191,7 +191,7 @@ Discard attacker stack to attacker discard pile.
 Leave defender stack in place.
 Combat has concluded.
 
-If the attacker stack has a lower attack power, then the attacker stack is discarded to the lane's discard pile and the defender stack remains in its lane, face up.
+If the attacker stack has a lower attack power than the defender stack, the attacker stack is discarded to the lane's discard pile and the defender stack remains in its lane, face up.
 
 If the attacker stack has an attack power equal to or greater than the defender stack, then the following takes place:
 
