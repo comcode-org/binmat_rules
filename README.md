@@ -129,10 +129,10 @@ On your turn, you may perform one action or pass.
 The actions available are:
 - Draw a card. [Drawing a Card](#drawing-a-card)
 - Play a card from your hand to a lane's stack. [Playing a Card](#playing-a-card)
-- Initiate combat in a lane. [Combat](#combat)
-- Discard a card into a lane discard pile. This is a defender-only action.
+- Initiate combat in a lane. This is an attacker-only action. [Combat](#combat)
+- Discard a card from your hand into a lane discard pile. This is a defender-only action.
 
-You can inspect any discard pile at any time, even if it is not your turn.
+You can inspect any discard pile, face-up stack, or face-down stack you control (attacker stacks for the attacker, defender stacks for the defender) at any time, even if it is not your turn.
 
 ### Drawing a Card
  
