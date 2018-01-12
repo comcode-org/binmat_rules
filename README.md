@@ -136,8 +136,9 @@ You can inspect any discard pile, face-up stack, or face-down stack you control 
 
 ### Drawing a Card
  
-The defender can draw a card from any of the six lane decks. When you draw a card from the three lane decks which have their top card face up, turn over the next card in the deck so it is face up and place it on top of the deck.
+The defender can draw a card from any of the six lane decks.
 The attacker can only draw from lane decks without a defender stack in front of them.
+When either player draws a card from the three lane decks which have their top card face up, turn over the next card in the deck so it is face up and place it on top of the deck.
 The attacker can also draw from a special 'attacker deck' which is to be placed at the side of the play area, in front of the attacker discard pile. This deck is not present at the start of the game, but can be formed via the rules below:
 
 When a draw is attempted from an empty deck, the following takes place:
