@@ -152,7 +152,7 @@ See the subsections below:
 #### DEFENDER:
 
 First, select the card from your hand which you wish to play.
-If this card is a number card, BOUNCE modifier (?), TRAP modifier (@) or WILD modifier (*) it can be  placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
+If this card is a number card, BOUNCE modifier (?), TRAP modifier (@) or WILD modifier (*) it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
 
 If this card is a BREAK modifier (>), it can be placed face-up or face-down on any defender stack which already contains at least one card, and does not contain another face-up break. When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
 
