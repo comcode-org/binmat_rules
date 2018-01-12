@@ -116,7 +116,7 @@ The following is an ASCII representation of the play area at the conclusion of s
 ## Game Structure
 
 The game is composed of 110 turns (55 for the attacker, 55 for the defender).
-Under competitive rules, each turn is not to exceed a maximum of five seconds. This rule can be ignored for casual play.
+Under competitive rules, each turn lasts five seconds. This rule can be ignored for casual play.
 
 If competitive rules are being used, the BINMAT app (available for iOS and Android) provides an effective timer and turn counter. If not, any method of counting down from 110 to 0 can be used.
 
