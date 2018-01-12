@@ -153,14 +153,14 @@ See the subsections below:
 #### DEFENDER:
 
 First, select the card from your hand which you wish to play.
-If this card is a number card, BOUNCE modifier (?), TRAP modifier (@), or WILD modifier (*), it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
+If this card is a number card, BOUNCE modifier (?), TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
 
 If this card is a BREAK modifier (>), it can be placed face-up or face-down on any defender stack which already contains at least one card, and does not contain another face-up BREAK modifier (>). When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
 
 #### ATTACKER:
 
 First, select the card from your hand which you wish to play.
-If this card is a number card, TRAP modifier (@), or WILD modifier (*), it can be placed on any of your six attacker stacks.
+If this card is a number card, TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six attacker stacks.
 
 If this card is a BOUNCE modifier (?), you may perform one of the following:
 Place this card face-up on an empty attacker stack. Commence combat immediately in this lane.
@@ -179,8 +179,8 @@ When combat is initiated in a lane, the cards in both attacker and defender stac
 
 Now repeat this for all present TRAP modifiers (@) in the stack of the other player.
 
-The number cards present in the stack should now have their sum calculated. Any present WILD modifiers (*) should
-be resolved now. ([The Wild Modifier](#the-wild-modifier))
+The number cards present in the stack should now have their sum calculated. Any present WILD modifiers (\*) should
+be resolved now. ([The WILD Modifier (\*)](#the-wild-modifier))
 
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
 
@@ -207,11 +207,11 @@ If the attacker stack has an attack power equal to or greater than the defender 
  
 The attacker stack is now sent to the attacker discard.
 
-### The Wild Modifier (*)
+### The WILD Modifier (\*)
 
-The WILD modifier (*) is applied to a stack during combat resolution.
+The WILD modifier (\*) is applied to a stack during combat resolution.
 It brings the sum of its stack up to the next highest power of two.
-If there are no number cards in a stack, the first WILD modifier (*) is treated as a 2 card, and all other WILD modifiers (*) apply as normal to this value.
+If there are no number cards in a stack, the first WILD modifier (\*) is treated as a 2 card, and all other WILD modifiers (\*) apply as normal to this value.
 
 ### Win Conditions
 
