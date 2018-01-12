@@ -173,18 +173,18 @@ Only the attacker is allowed to initiate combat normally.
 They can only do this in a lane in which they possess a stack of one or more cards.
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
-- For all present TRAP modifiers in the stack of the player who initiated combat:
-  - If the TRAP was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAPs, attacker discard for attacker TRAPs)
+- For all present TRAP modifiers (@) in the stack of the player who initiated combat:
+  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
 
-Now repeat this for all present TRAP modifiers in the stack of the other player.
+Now repeat this for all present TRAP modifiers (@) in the stack of the other player.
 
-The number cards present in the stack should now have their sum calculated. Any present WILD modifiers should
+The number cards present in the stack should now have their sum calculated. Any present WILD modifiers (*) should
 be resolved now. ([The Wild Modifier](#the-wild-modifier))
 
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
 
-If both stacks have attack power zero, or a BOUNCE modifier is present in either stack:
-Send all BOUNCEs in this lane to opposing discard piles. (defender BOUNCE to attacker discard pile, attacker bounce to defender discard pile)
+If both stacks have attack power zero, or a BOUNCE modifier (?) is present in either stack:
+Send all BOUNCE modifiers (?) in this lane to opposing discard piles. (defender BOUNCE modifiers (?) to attacker discard pile, attacker BOUNCE modifiers (?) to defender discard pile)
 Send attacker stack to attacker discard pile.
 Leave defender stack in place.
 Combat has concluded.
@@ -193,9 +193,9 @@ If the attacker stack has a lower attack power, then the attacker stack goes to 
 
 If the attacker stack has an attack power equal to or greater than the defender stack, then the following takes place:
 
-- If a BREAK modifier is not present in the attacker stack:
+- If a BREAK modifier (>) is not present in the attacker stack:
   - Calculate the absolute difference between attack powers, and then add one to it. This is the damage value.
-- If a BREAK modifier is present in the attacker stack:
+- If a BREAK modifier (>) is present in the attacker stack:
   - The attack power of the attacker stack is now the damage value.
 
 - While the damage value is greater than zero:
@@ -206,11 +206,11 @@ If the attacker stack has an attack power equal to or greater than the defender 
  
 The attacker stack is now sent to the attacker discard.
 
-### The Wild Modifier
+### The Wild Modifier (*)
 
-The WILD modifier is applied to a stack during combat resolution.
+The WILD modifier (*) is applied to a stack during combat resolution.
 It brings the sum of its stack up to the next highest power of two.
-If there are no number cards in a stack, the first wild is treated as a 2 card, and all other WILDs apply as normal to this value.
+If there are no number cards in a stack, the first WILD modifier (*) is treated as a 2 card, and all other WILD modifiers (*) apply as normal to this value.
 
 ### Win Conditions
 
