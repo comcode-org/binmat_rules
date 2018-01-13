@@ -124,7 +124,8 @@ If competitive rules are being used, the BINMAT app (available for iOS and Andro
 
 ### The Turn Cycle
 The defender and attacker alternate turns, with defender starting first.
-On your turn, you may perform one action or pass. 
+On your turn, you may perform one action or pass.
+Under the competitive rules with a turn timer, if you do not complete your turn within 5 seconds, you automatically pass your turn with no further penalty.
 
 The actions available are:
 - Draw a card. [Drawing a Card](#drawing-a-card)
