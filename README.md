@@ -215,6 +215,7 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 
 The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
 The game is won by the attacker if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
+The game is won by the attacker if they attempt to draw from an undefended lane deck that has no cards and no discard.
 
 ### Combat Examples and Edge Cases
 [now a stub]
