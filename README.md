@@ -225,3 +225,49 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 
 ### Combat Examples and Edge Cases
 [now a stub]
+
+### Modifier Quick Reference
+This section is meant to be a quick reference of modifier effects for use in game.
+Since the rules are in a state of flux, it is entirely possible that a change will be made to the rules without updating this section.
+The rules take precedence over this section if they ever are contradictory.
+
+#### Attacker
+- **TRAP modifier (@)**
+- Can be played face-down on any attacker stack
+- When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the top card in the opponent's stack to the initiator's discard pile.
+Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the top card in the initiator's stack to the opponent's discard pile.
+- **WILD modifier (\*)**
+- Can be played face-down on any attacker stack
+- When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
+- **BOUNCE modifier (?)**
+- Can be played...
+- ... face-up on any attacker stack with no cards in it
+- When played this way, immediately initiate combat in the lane it was played
+- ... face-down on any attacker stack
+- If this is still in your stack after damage calculation, sets the attack power of both combatants to zero, and is discarded to the lane discard pile.
+No damage is caused by this attack
+- **BREAK modifier (>)**
+- Can be played...
+- ... face-down on any attacker stack with at least one card in it
+- ... face-up on any attacker stack with at least one card in it
+- When played this way, immediately initiate combat in the lane it was played
+- If combat is not affected by a BOUNCE (?) modifier, your damage for this attack is your attack power (rather than the difference plus 1)
+
+#### Defender:
+- **TRAP modifier (@)**
+- Can be played on any defender stack, matching facing
+- When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the top card in the opponent's stack to the initiator's discard pile.
+Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the top card in the initiator's stack to the opponent's discard pile.
+- **WILD modifier (\*)**
+- Can be played on any defender stack, matching facing
+- When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
+- **BOUNCE modifier (?)**
+- Can be played on any defender stack, matching facing
+- If this is still in your stack after damage calculation, sets the attack power of both combatants to zero, and is discarded to the attacker discard pile.
+No damage is caused by this attack
+- **BREAK modifier (>)**
+- Can be played...
+- ... face-down on any face-down defender stack with at least one card in it
+- When played this way, it acts only as a damage buffer
+- ... face-up on any defender stack, regardless of facing, so long as it does not have another face-up BREAK modifier (>) in it
+- When played this way, immediately initiate combat in the lane it was played
