@@ -176,7 +176,7 @@ They can only do this in a lane in which they possess a stack of one or more car
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
 - For all present TRAP modifiers (@) in the stack of the player who initiated combat:
-  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, send the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
+  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, discard the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
 
 Now repeat this for all remaining TRAP modifiers (@) in the stack of the other player.
 
@@ -186,12 +186,12 @@ be resolved now. ([The WILD Modifier (\*)](#the-wild-modifier))
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
 
 If both stacks have attack power zero, or a BOUNCE modifier (?) is present in either stack:
-Send all BOUNCE modifiers (?) in this lane to opposing discard piles. (defender BOUNCE modifiers (?) to attacker discard pile, attacker BOUNCE modifiers (?) to defender discard pile)
-Send attacker stack to attacker discard pile.
+Discard all BOUNCE modifiers (?) in this lane to opposing discard piles. (defender BOUNCE modifiers (?) to attacker discard pile, attacker BOUNCE modifiers (?) to defender discard pile)
+Discard attacker stack to attacker discard pile.
 Leave defender stack in place.
 Combat has concluded.
 
-If the attacker stack has a lower attack power, then the attacker stack goes to the lane's discard pile and the defender stack remains in its lane, face up.
+If the attacker stack has a lower attack power than the defender stack, the attacker stack is discarded to the lane's discard pile and the defender stack remains in its lane, face up.
 
 If the attacker stack has an attack power equal to or greater than the defender stack, then the following takes place:
 
@@ -200,11 +200,8 @@ If the attacker stack has an attack power equal to or greater than the defender 
 - If a BREAK modifier (>) is present in the attacker stack:
   - The attack power of the attacker stack is now the damage value.
 
-- While the damage value is greater than zero:
-  - If there are cards left in the defender's stack, send the most recently played card there to the attacker discard pile.
-  - Else if there are not, but there are cards remaining in the lane's lane deck, send the top card from the lane deck to the attacker's hand.
-  - Else if there are no cards remaining in the lane deck either, the attacker has won the game. ([Win Conditions](#win-conditions))
-  - Subtract one from the damage value.
+For every point of damage, discard the most recently played card in the defender's stack to the attacker's discard pile.
+If the defender's stack is empty, the attacker instead draws a card from the lane deck. If the attacker cannot draw from the lane deck (because it is empty and has no lane discard pile), the attacker wins the game ([Win Conditions](#win-conditions))
  
 The attacker stack is now sent to the attacker discard.
 
@@ -217,8 +214,7 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 ### Win Conditions
 
 The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
-The game is won by the attacker if they deal more damage to a lane deck than the lane deck has cards. This
-is mentioned in combat resolution (see [Combat](#combat))
+The game is won by the attacker if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
 
 ### Combat Examples and Edge Cases
 [now a stub]
