@@ -16,6 +16,7 @@
   - [The Wild Modifier](#the-wild-modifier)
 - [Win Conditions](#win-conditions)
 - [Combat Examples and Edge Cases](#combat-examples-and-edge-cases)
+- [Modifier Quick Reference](#modifier-quick-reference)
 
 ## The Binmat Deck
 
@@ -149,7 +150,7 @@ When a draw is attempted from an empty deck, the following takes place:
   - The card can then be drawn from the top of the newly formed deck.
 - If the deck's associated discard pile is empty, the player who 'controls' that deck loses the game.
   For example, if either player attempts to draw from a lane deck that has no cards available and no cards in its discard pile, the defender loses. If the attacker attempts to draw from the attacker deck in similar circumstances, the attacker loses.
-  Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely if they have no other moves available. The general case added by and to appease dtr in the hopes that it may trap a poorly programed BINMAT bot some day.
+  Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely. The general case added by and to appease dtr in the hopes that it may trap a poorly programmed BINMAT bot some day.
 
 ### Playing a Card
 
@@ -161,7 +162,7 @@ See the subsections below:
 First, select the card from your hand which you wish to play.
 If this card is a number card, BOUNCE modifier (?), TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
 
-If this card is a BREAK modifier (>), it can be placed face-up or face-down on any defender stack which already contains at least one card, and does not contain another face-up BREAK modifier (>). When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
+If this card is a BREAK modifier (>), it can be placed face-up on any defender stack which already contains at least one card, and does not contain another face-up BREAK modifier (>), or placed face-down on any face-down defender stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
 
 #### ATTACKER:
 
@@ -225,3 +226,47 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 
 ### Combat Examples and Edge Cases
 [now a stub]
+
+### Modifier Quick Reference
+This section is meant to be a quick reference of modifier effects for use in game.
+Since the rules are in a state of flux, it is entirely possible that a change will be made to the rules without updating this section.
+The rules take precedence over this section if they ever are contradictory.
+
+#### Attacker
+- **TRAP modifier (@)**
+  - Can be played face-down on any attacker stack
+  - When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the top card in the opponent's stack to the initiator's discard pile.
+    Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the top card in the initiator's stack to the opponent's discard pile.
+- **WILD modifier (\*)**
+  - Can be played face-down on any attacker stack
+  - When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
+- **BOUNCE modifier (?)**
+  - Can be played...
+    - ... face-up on any attacker stack with no cards in it
+      - When played this way, immediately initiate combat in the lane it was played
+    - ... face-down on any attacker stack
+  - When combat is affected by a BOUNCE modifier, discard all BOUNCE modifiers (?) in either stack to the opposing discard pile (attacker BOUNCE modifiers (?) to lane discard, defender BOUNCE modifiers (?) to attacker discard), discard the attacker stack to attacker discard, and end the combat (no damage is caused)
+- **BREAK modifier (>)**
+  - Can be played...
+    - ... face-down on any attacker stack with at least one card in it
+    - ... face-up on any attacker stack with at least one card in it
+      - When played this way, immediately initiate combat in the lane it was played
+  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), your damage for this attack is your attack power (rather than the difference plus 1)
+
+#### Defender:
+- **TRAP modifier (@)**
+  - Can be played on any defender stack, matching facing
+  - When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the top card in the opponent's stack to the initiator's discard pile.
+    Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the top card in the initiator's stack to the opponent's discard pile.
+- **WILD modifier (\*)**
+  - Can be played on any defender stack, matching facing
+  - When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
+- **BOUNCE modifier (?)**
+  - Can be played on any defender stack, matching facing
+  - When combat is affected by a BOUNCE modifier, discard all BOUNCE modifiers (?) in either stack to the opposing discard pile (attacker BOUNCE modifiers (?) to lane discard, defender BOUNCE modifiers (?) to attacker discard), discard the attacker stack to attacker discard, and end the combat (no damage is caused)
+- **BREAK modifier (>)**
+  - Can be played...
+    - ... face-down on any face-down defender stack with at least one card in it
+      - When played this way, it acts only as a damage buffer
+    - ... face-up on any defender stack, regardless of facing, so long as it does not have another face-up BREAK modifier (>) in it
+      - When played this way, immediately initiate combat in the lane it was played
