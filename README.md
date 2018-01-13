@@ -16,6 +16,7 @@
   - [The Wild Modifier](#the-wild-modifier)
 - [Win Conditions](#win-conditions)
 - [Combat Examples and Edge Cases](#combat-examples-and-edge-cases)
+- [Modifier Quick Reference](#modifier-quick-reference)
 
 ## The Binmat Deck
 
@@ -149,7 +150,7 @@ When a draw is attempted from an empty deck, the following takes place:
   - The card can then be drawn from the top of the newly formed deck.
 - If the deck's associated discard pile is empty, the player who 'controls' that deck loses the game.
   For example, if either player attempts to draw from a lane deck that has no cards available and no cards in its discard pile, the defender loses. If the attacker attempts to draw from the attacker deck in similar circumstances, the attacker loses.
-  Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely if they have no other moves available. The general case added by and to appease dtr in the hopes that it may trap a poorly programed BINMAT bot some day.
+  Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely if they have no other moves available. The general case added by and to appease dtr in the hopes that it may trap a poorly programmed BINMAT bot some day.
 
 ### Playing a Card
 
@@ -244,14 +245,13 @@ The rules take precedence over this section if they ever are contradictory.
     - ... face-up on any attacker stack with no cards in it
       - When played this way, immediately initiate combat in the lane it was played
     - ... face-down on any attacker stack
-  - If this is still in your stack after damage calculation, sets the attack power of both combatants to zero, and is discarded to the lane discard pile.
-    No damage is caused by this attack
+  - When combat is affected by a BOUNCE modifier, discard all BOUNCE modifiers (?) in either stack to the opposing discard pile (attacker BOUNCE modifiers (?) to lane discard, defender BOUNCE modifiers (?) to attacker discard), discard the attacker stack to attacker discard, and end the combat (no damage is caused)
 - **BREAK modifier (>)**
   - Can be played...
     - ... face-down on any attacker stack with at least one card in it
     - ... face-up on any attacker stack with at least one card in it
       - When played this way, immediately initiate combat in the lane it was played
-  - If combat is not affected by a BOUNCE (?) modifier, your damage for this attack is your attack power (rather than the difference plus 1)
+  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (!), your damage for this attack is your attack power (rather than the difference plus 1)
 
 #### Defender:
 - **TRAP modifier (@)**
@@ -263,8 +263,7 @@ The rules take precedence over this section if they ever are contradictory.
   - When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
 - **BOUNCE modifier (?)**
   - Can be played on any defender stack, matching facing
-  - If this is still in your stack after damage calculation, sets the attack power of both combatants to zero, and is discarded to the attacker discard pile.
-    No damage is caused by this attack
+  - When combat is affected by a BOUNCE modifier, discard all BOUNCE modifiers (?) in either stack to the opposing discard pile (attacker BOUNCE modifiers (?) to lane discard, defender BOUNCE modifiers (?) to attacker discard), discard the attacker stack to attacker discard, and end the combat (no damage is caused)
 - **BREAK modifier (>)**
   - Can be played...
     - ... face-down on any face-down defender stack with at least one card in it
