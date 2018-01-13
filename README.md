@@ -251,7 +251,7 @@ The rules take precedence over this section if they ever are contradictory.
     - ... face-down on any attacker stack with at least one card in it
     - ... face-up on any attacker stack with at least one card in it
       - When played this way, immediately initiate combat in the lane it was played
-  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (!), your damage for this attack is your attack power (rather than the difference plus 1)
+  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), your damage for this attack is your attack power (rather than the difference plus 1)
 
 #### Defender:
 - **TRAP modifier (@)**
