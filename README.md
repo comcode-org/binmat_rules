@@ -142,9 +142,13 @@ When either player draws a card from the three lane decks which have their top c
 The attacker can also draw from a special 'attacker deck' which is to be placed at the side of the play area, in front of the attacker discard pile. This deck is not present at the start of the game, but can be formed via the rules below:
 
 When a draw is attempted from an empty deck, the following takes place:
-The deck's corresponding discard pile is shuffled into the deck.
-If the deck formerly had its top card turned face up, turn the top card face up.
-The card can then be drawn from the top of the newly formed deck.
+- If the deck has a discard pile with at least one card in it:
+  - The deck's corresponding discard pile is shuffled into the deck.
+  - If the deck formerly had its top card turned face up, turn the top card face up.
+  - The card can then be drawn from the top of the newly formed deck.
+- If the deck's associated discard pile is empty, the player who 'controls' that deck loses the game.
+  For example, if either player attempts to draw from a lane deck that has no cards available and no cards in its discard pile, the defender loses. If the attacker attempts to draw from the attacker deck in similar circumstances, the attacker loses.
+  Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely if they have no other moves available. The general case added by and to appease dtr in the hopes that it may trap a poorly programed BINMAT bot some day.
 
 ### Playing a Card
 
@@ -214,8 +218,10 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 ### Win Conditions
 
 The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
+The game is won by the defender if the attacker attempts to draw a card from the attacker deck when neither it nor the attacker discard pile has any cards in it.
 The game is won by the attacker if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
 The game is won by the attacker if they attempt to draw from an undefended lane deck that has no cards and no discard.
+The game is won by the attacker if either player attempts to draw a card from a lane deck when neither it nor its associated discard pile has any cards in it.
 
 ### Combat Examples and Edge Cases
 [now a stub]
