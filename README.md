@@ -218,10 +218,10 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 
 ### Win Conditions
 
-The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
-The game is won by the defender if the attacker attempts to draw a card from the attacker deck when neither it nor the attacker discard pile has any cards in it.
-The game is won by the attacker if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
-The game is won by the attacker if either player attempts to draw a card from a lane deck when neither it nor its associated discard pile has any cards in it.
+- The game is won by the defender if all 110 turns have elapsed without the attacker achieving victory.
+- The game is won by the defender if the attacker attempts to draw a card from the attacker deck when neither it nor the attacker discard pile has any cards in it.
+- The game is won by the attacker if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
+- The game is won by the attacker if either player attempts to draw a card from a lane deck when neither it nor its associated discard pile has any cards in it.
 
 ### Combat Examples and Edge Cases
 [now a stub]
