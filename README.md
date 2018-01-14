@@ -65,7 +65,7 @@ Enough space for another deck should be left behind (defender's perspective) the
 
 Enough space should also be left beside the play area for another deck, the 'attacker deck', and behind it space for the 'attacker discard pile'.
 
-If the competitive rules are being followed, the BINMAT app ([Game Structure](#game-structure)) may now be placed equidistant from the attacker and defender at one side of the play area.
+The BINMAT app ([Game Structure](#game-structure)) or other turn counter and timer may now be placed equidistant from the attacker and defender at one side of the play area.
 
 The following is an ASCII representation of the play area at the conclusion of setup:
 
@@ -117,16 +117,17 @@ The following is an ASCII representation of the play area at the conclusion of s
 ## Game Structure
 
 The game is composed of 110 turns (55 for the attacker, 55 for the defender).
-Under competitive rules, each turn lasts five seconds. This rule can be ignored for casual play.
+Each turn lasts five seconds, though resolving combat typically requires pausing the timer.
+When learning or experimenting, the timer can be extended or ignored, though rapid play is encouraged, as time pressure is an intentional part of the game.
 
-If competitive rules are being used, the BINMAT app (available for iOS and Android) provides an effective timer and turn counter. If not, any method of counting down from 110 to 0 can be used.
+The BINMAT app (available for iOS and Android) provides an effective timer and turn counter. If it is not available, any method of counting down from 110 to 0 can be used.
 
 ## Gameplay
 
 ### The Turn Cycle
 The defender and attacker alternate turns, with defender starting first.
 On your turn, you may perform one action or pass.
-Under the competitive rules with a turn timer, if you do not complete your turn within 5 seconds, you automatically pass your turn with no further penalty.
+If you do not complete your turn within 5 seconds, you automatically pass your turn with no further penalty.
 
 The actions available are:
 - Draw a card. [Drawing a Card](#drawing-a-card)
