@@ -13,7 +13,7 @@
   - [Drawing a Card](#drawing-a-card)
   - [Playing a Card](#playing-a-card)
   - [Combat](#combat)
-  - [The Wild Modifier](#the-wild-modifier)
+  - [The Wild Modifier](#the-wild-modifier-)
 - [Win Conditions](#win-conditions)
 - [Combat Examples and Edge Cases](#combat-examples-and-edge-cases)
 - [Modifier Quick Reference](#modifier-quick-reference)
@@ -183,12 +183,12 @@ They can only do this in a lane in which they possess a stack of one or more car
 
 When combat is initiated in a lane, the cards in both attacker and defender stacks are revealed.
 - For all present TRAP modifiers (@) in the stack of the player who initiated combat:
-  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, discard the top card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
+  - If the TRAP modifier (@) was turned from face-down to face-up by this revealing, discard the most recently played card in your opponent's stack to your discard pile. (lane discard for defender TRAP modifiers (@), attacker discard for attacker TRAP modifiers (@))
 
 Now repeat this for all remaining TRAP modifiers (@) in the stack of the other player.
 
 The number cards present in the stack should now have their sum calculated. Any present WILD modifiers (\*) should
-be resolved now. ([The WILD Modifier (\*)](#the-wild-modifier))
+be resolved now. ([The WILD Modifier (\*)](#the-wild-modifier-))
 
 If the sum is not now a power of two, the stack has attack power zero. Otherwise, its attack power is the power of two to which the sum is equivalent.
 
@@ -236,8 +236,8 @@ The rules take precedence over this section if they ever are contradictory.
 #### Attacker
 - **TRAP modifier (@)**
   - Can be played face-down on any attacker stack
-  - When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the top card in the opponent's stack to the initiator's discard pile.
-    Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the top card in the initiator's stack to the opponent's discard pile.
+  - When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the most recently played card in the opponent's stack to the initiator's discard pile.
+    Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the most recently played card in the initiator's stack to the opponent's discard pile.
 - **WILD modifier (\*)**
   - Can be played face-down on any attacker stack
   - When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
@@ -257,8 +257,8 @@ The rules take precedence over this section if they ever are contradictory.
 #### Defender:
 - **TRAP modifier (@)**
   - Can be played on any defender stack, matching facing
-  - When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the top card in the opponent's stack to the initiator's discard pile.
-    Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the top card in the initiator's stack to the opponent's discard pile.
+  - When combat is initiated, each TRAP modifier revealed (flipped) in initiator's stack discards the most recently played card in the opponent's stack to the initiator's discard pile.
+    Then, each remaining TRAP modifier revealed (flipped) in the opponent's stack discards the most recently played card in the initiator's stack to the opponent's discard pile.
 - **WILD modifier (\*)**
   - Can be played on any defender stack, matching facing
   - When damage is calculated, bring your attack power to the next highest power of 2. If there are no number cards in the stack, the first WILD modifier (\*) is treated as a 2 instead
