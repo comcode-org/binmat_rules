@@ -3,7 +3,7 @@
 ## Credits
 'thx alic' alice ([@alicehmd](https://github.com/alicehmd)), 'uncle deetr' dtr
 
-## Index 
+## Index
 
 - [The Binmat Deck](#the-binmat-deck)
 - [Game Setup](#game-setup)
@@ -138,7 +138,7 @@ The actions available are:
 You can inspect any discard pile, face-up stack, or face-down stack you control (attacker stacks for the attacker, defender stacks for the defender) at any time, even if it is not your turn.
 
 ### Drawing a Card
- 
+
 The defender can draw a card from any of the six lane decks.
 The attacker can only draw from lane decks without a defender stack in front of them.
 When either player draws a card from the three lane decks which have their top card face up, turn over the next card in the deck so it is face up and place it on top of the deck.
@@ -161,7 +161,7 @@ See the subsections below:
 #### DEFENDER:
 
 First, select the card from your hand which you wish to play.
-If this card is a number card, BOUNCE modifier (?), TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down. 
+If this card is a number card, BOUNCE modifier (?), TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down.
 
 If this card is a BREAK modifier (>), it can be placed face-up on any defender stack which already contains at least one card, and does not contain another face-up BREAK modifier (>), or placed face-down on any face-down defender stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
 
@@ -205,11 +205,11 @@ If the attacker stack has an attack power equal to or greater than the defender 
 - If a BREAK modifier (>) is not present in the attacker stack:
   - Calculate the absolute difference between attack powers, and then add one to it. This is the damage value.
 - If a BREAK modifier (>) is present in the attacker stack:
-  - The attack power of the attacker stack is now the damage value.
+  - The damage value is the attack power of the attacker stack, or the number of cards in the defender's stack, whichever is greater.
 
 For every point of damage, discard the most recently played card in the defender's stack to the attacker's discard pile.
 If the defender's stack is empty, the attacker instead draws a card from the lane deck. If the attacker cannot draw from the lane deck (because it is empty and has no lane discard pile), the attacker wins the game ([Win Conditions](#win-conditions))
- 
+
 The attacker stack is now sent to the attacker discard.
 
 ### The WILD Modifier (\*)
@@ -252,7 +252,7 @@ The rules take precedence over this section if they ever are contradictory.
     - ... face-down on any attacker stack with at least one card in it
     - ... face-up on any attacker stack with at least one card in it
       - When played this way, immediately initiate combat in the lane it was played
-  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), your damage for this attack is your attack power (rather than the difference plus 1)
+  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), your damage for this attack is your attack power or the number of cards in the defender's stack, whichever is greater. (rather than the difference plus 1)
 
 #### Defender:
 - **TRAP modifier (@)**
