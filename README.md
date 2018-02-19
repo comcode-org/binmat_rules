@@ -202,9 +202,9 @@ If the attacker stack has a lower attack power than the defender stack, the atta
 
 If the attacker stack has an attack power equal to or greater than the defender stack, then the following takes place:
 
-- If a BREAK modifier (>) is not present in the attacker stack:
+- If a BREAK modifier (>) is not present in either stack:
   - Calculate the absolute difference between attack powers, and then add one to it. This is the damage value.
-- If a BREAK modifier (>) is present in the attacker stack:
+- If a BREAK modifier (>) is present in either stack:
   - The damage value is the attack power of the attacker stack, or the number of cards in the defender's stack, whichever is greater.
 
 For every point of damage, discard the most recently played card in the defender's stack to the attacker's discard pile.
@@ -252,7 +252,7 @@ The rules take precedence over this section if they ever are contradictory.
     - ... face-down on any attacker stack with at least one card in it
     - ... face-up on any attacker stack with at least one card in it
       - When played this way, immediately initiate combat in the lane it was played
-  - If combat is not affected by a BOUNCE modifier (?) and the attacker still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), your damage for this attack is your attack power or the number of cards in the defender's stack, whichever is greater. (rather than the difference plus 1)
+  - If combat is not affected by a BOUNCE modifier (?) and either stack still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), your damage for this attack is your attack power or the number of cards in the defender's stack, whichever is greater. (rather than the difference plus 1)
 
 #### Defender:
 - **TRAP modifier (@)**
@@ -270,4 +270,5 @@ The rules take precedence over this section if they ever are contradictory.
     - ... face-down on any face-down defender stack with at least one card in it
       - When played this way, it acts only as a damage buffer
     - ... face-up on any defender stack, regardless of facing, so long as it does not have another face-up BREAK modifier (>) in it
-      - When played this way, immediately initiate combat in the lane it was played
+      - When played this way, immediately initiate combat in the lane it was played.
+  - If combat is not affected by a BOUNCE modifier (?) and either stack still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), the attacker's damage for this attack is their attack power or the number of cards in the your stack, whichever is greater. (rather than the difference plus 1)
