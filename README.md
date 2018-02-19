@@ -268,7 +268,6 @@ The rules take precedence over this section if they ever are contradictory.
 - **BREAK modifier (>)**
   - Can be played...
     - ... face-down on any face-down defender stack with at least one card in it
-      - When played this way, it acts only as a damage buffer
     - ... face-up on any defender stack, regardless of facing, so long as it does not have another face-up BREAK modifier (>) in it
       - When played this way, immediately initiate combat in the lane it was played.
   - If combat is not affected by a BOUNCE modifier (?) and either stack still has a BREAK modifier (>) that has not been destroyed by a TRAP modifier (@), the attacker's damage for this attack is their attack power or the number of cards in the your stack, whichever is greater. (rather than the difference plus 1)
