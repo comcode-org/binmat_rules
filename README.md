@@ -152,6 +152,8 @@ When a draw is attempted from an empty deck, the following takes place:
 - If the deck's associated discard pile is empty, the player who 'controls' that deck loses the game.
   For example, if either player attempts to draw from a lane deck that has no cards available and no cards in its discard pile, the defender loses. If the attacker attempts to draw from the attacker deck in similar circumstances, the attacker loses.
   Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely. The general case added by and to appease dtr in the hopes that it may trap a poorly programmed BINMAT bot some day.
+  
+The attacker can discard a card from their hand to the attacker discard pile in order to draw two cards from their deck. Note that these draws follow the above rules like any other draws, and so can trigger attacker loss.
 
 ### Playing a Card
 
