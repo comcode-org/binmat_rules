@@ -70,7 +70,7 @@ The BINMAT app ([Game Structure](#game-structure)) or other turn counter and tim
 The following is an ASCII representation of the play area at the conclusion of setup:
 
 ```
-                     defender's position
+                    defender team position
 
 
 |         |         |         |         |         |         |
@@ -81,10 +81,10 @@ The following is an ASCII representation of the play area at the conclusion of s
 |         |         |         |         |         |         |
 |         |         |         |         |         |         |
 | +-----+ | +-----+ | +-----+ | +-----+ | +-----+ | +-----+ |
-| |     | | |     | | |     | | |4    | | |3    | | |2    | |
-| | {h} | | | {h} | | | {h} | | |!    | | |!    | | |!    | |
-| |     | | |     | | |   lane decks !| | |    !| | |    !| |
-| |     | | |     | | |     | | |    4| | |    3| | |    2| |
+| |2    | | |3    | | |4    | | |     | | |     | | |     | |
+| |!    | | |!    | | |!    | | | {h} | | | {h} | | | {h} | |
+| |    !| | |    !| | |   lane decks  | | |     | | |     | |
+| |    2| | |    3| | |    4| | |     | | |     | | |     | |
 | +-----+ | +-----+ | +-----+ | +-----+ | +-----+ | +-----+ |
 |         |         |         |         |         |         |
 |         |         |         |         |         |         |
@@ -109,7 +109,7 @@ The following is an ASCII representation of the play area at the conclusion of s
 |         |         |         |         |         |         | +-----+
 
 
-                     attacker's position
+                    attacker team position
 
 
 ```
