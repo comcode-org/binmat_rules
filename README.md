@@ -152,31 +152,24 @@ When a draw is attempted from an empty deck, the following takes place:
 - If the deck's associated discard pile is empty, the player who 'controls' that deck loses the game.
   For example, if either player attempts to draw from a lane deck that has no cards available and no cards in its discard pile, the defender loses. If the attacker attempts to draw from the attacker deck in similar circumstances, the attacker loses.
   Note that the attacker cannot be forced into drawing from their deck, nor can the defender be forced to draw from a lane deck, as either player can pass freely. The general case added by and to appease dtr in the hopes that it may trap a poorly programmed BINMAT bot some day.
-  
+
 The attacker can discard a card from their hand to the attacker discard pile in order to draw two cards from their deck. Note that these draws follow the above rules like any other draws, and so can trigger attacker loss.
 
 ### Playing a Card
 
-Playing a card is slightly different depending on your role as the attacker or defender.
-See the subsections below:
+You can play one card to one of your side's stacks as your action. Generally, this card should be played matching the facing of the stack - an empty stack is face down.
+The BREAK (>) and BOUNCE (?) modifiers are subject to special rules concerning how they are played, which are detailed below.
 
-#### DEFENDER:
+#### Special Rules: BREAK (>)
 
-First, select the card from your hand which you wish to play.
-If this card is a number card, BOUNCE modifier (?), TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six defender stacks. If the defender stack on which you place this card is face up, the card must also be placed face up. If it is face down or empty, it must be placed face down.
+A BREAK can only be played to a stack that contains another card, it cannot be the first card in a stack.
+A BREAK can be played face up to a face down stack.
+When a BREAK is played face up to a stack (whether through the above rule or by playing it normally to a stack that is already face up), combat is immediately initiated in the lane to which it was played. This rule allows the defender to initiate combat. This combat has slightly modified calculations, as described in [Combat](#combat).
 
-If this card is a BREAK modifier (>), it can be placed face-up on any defender stack which already contains at least one card, and does not contain another face-up BREAK modifier (>), or placed face-down on any face-down defender stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. See [Combat](#combat).
+#### Special Rules: BOUNCE (?)
 
-#### ATTACKER:
-
-First, select the card from your hand which you wish to play.
-If this card is a number card, TRAP modifier (@), or WILD modifier (\*), it can be placed on any of your six attacker stacks.
-
-If this card is a BOUNCE modifier (?), you may perform one of the following:
-- Place this card face-up on an empty attacker stack. Commence combat immediately in this lane.
-- Place this card face-down to any attacker stack.
-
-If this card is a BREAK modifier (>), it can be played face-up or face-down on any attacker stack which already contains at least one card. When you place this card face-up, immediately initiate combat in the lane to which it was played. This combat has slightly modified calculations, as described in [Combat](#combat).
+For the defender, there are no special rules concerning the BOUNCE. It should be played normally as described above.
+For the attacker, the BOUNCE can be played face up to an empty stack. This action commences combat in the lane to which it was played.
 
 ### Combat
 
