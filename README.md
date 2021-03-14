@@ -145,6 +145,16 @@ In a 'real game' (for instance in hackmud), turn order changes each turn accordi
 
 It should be noted that a consequence of the sequential resolution of actions is that a member of your team whose action resolves before yours may result in your own action becoming invalid. For instance, if attacker 0 declares combat in a lane, resulting in the stack in that lane being cleared out, and attacker 1's action is also to declare combat in that lane, attacker 1's action has become invalid, since there is no longer a stack in that lane.
 
+### Invalid Actions
+The following actions are considered 'invalid':
+- Any action which this rulebook explicitly states to be invalid.
+- Any action which goes against the rules given in this rulebook, for instance, playing a BREAK to an empty stack.
+- Failing to make an action, either through running out of time or specifically opting to pass.
+
+If a player makes two consecutive invalid actions, then their entire hand must be discarded. Attackers discard their hand into the attacker discard. Defenders discard one card to the first lane discard, one card to the second, etc, wrapping around if they have more than 6 cards.
+
+Note that in hackmud, a player who is not defender/attacker 0 who makes two consecutive invalid actions will also be kicked from the game entirely. It is not recommended that this rule is used in casual play, however. (In addition, please note that there is also an edge case here that is beyond the scope of this rulebook.)
+
 ### Drawing a Card
 
 A defender can draw a card from any of the six lane decks.
@@ -212,7 +222,7 @@ If the attacker stack has an attack power equal to or greater than the defender 
   - The damage value is the attack power of the attacker stack, or the number of cards in the defender stack, whichever is greater.
 
 For every point of damage, discard the most recently played card in the defender stack to the attacker discard pile.
-If the defender stack is empty, then a draw from the lane deck takes place. If the combat was initiated by an attacker, then this attacker performs these draws. If combat was initiated by a defender through the use of a BREAK, then attacker 0 performs the first draw, then attacker 1, cycling the attackers until the remaining points of damage have been consumed. If the attackers cannot draw from the lane deck (because it is empty and so is its discard pile), the attackers win the game ([Win Conditions](#win-conditions))
+If the defender stack is empty, then a draw from the lane deck takes place. If the combat was initiated by an attacker, then that attacker performs these draws. If combat was initiated by a defender through the use of a BREAK, then attacker 0 performs the first draw, followed by attacker 1, cycling the attackers until the remaining points of damage have been consumed. If the attackers cannot draw from the lane deck (because it is empty and so is its discard pile), the attackers win the game ([Win Conditions](#win-conditions))
 
 The attacker stack is now sent to the attacker discard.
 
