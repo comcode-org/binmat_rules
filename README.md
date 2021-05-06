@@ -238,6 +238,7 @@ If there are no number cards in a stack, the first WILD modifier (\*) is treated
 
 - The game is won by the defenders if all 110 turns have elapsed without the attacker achieving victory.
 - The game is won by the attackers if they are unable to draw a card from a lane deck as a result of attacking that lane. (see [Combat](#combat))
+- The game is won by the attackers if they attempt to draw a card from a lane deck when neither it nor its associated discard pile has any cards in it.
 
 ### Modifier Quick Reference
 This section is meant to be a quick reference of modifier effects for use in game.
